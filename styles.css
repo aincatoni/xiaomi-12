@@ -59,7 +59,10 @@
   --white: #ffffff;
   --black: #000000;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+}
 /********************************/
 /********  Textos  *************/
 
@@ -353,9 +356,13 @@ a.buttonSeeAll:hover {
 /***** CSS ESPECIFICO DEL LANDING ******/
 
 .landing {
-  max-width: 1420px;
-  margin: 0 auto;
-  padding: 20px 0;
+  max-width: 1420px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.bs-5 .landing #hero {
+  background-color: #e6e9e8;
 }
 
 .bs-5 .landing .figure-mobile {
