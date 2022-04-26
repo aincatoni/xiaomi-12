@@ -105,6 +105,9 @@ body {
 }
 
 /** Tamaños de Texto (Títulos y Parrafo) **/
+.pcf-title-extra-big {
+  font-size: 8em !important;
+}
 
 .pcf-title-big {
   font-size: 4em !important;
