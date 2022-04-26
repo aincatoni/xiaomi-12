@@ -358,16 +358,44 @@ a.buttonSeeAll:hover {
   padding: 20px 0;
 }
 
-.figure {
+.bs-5 .landing .figure-mobile {
   position: relative;
-
+  display: block;
 }
 
-.title-xiaomi {
+.bs-5 .landing .title-xiaomi-mobile {
   position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translate(-10%, -50%);
-
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
 }
 
+.bs-5 .landing .title-xiaomi-desktop {
+  display: none;
+}
+
+.bs-5 .landing .figure-desktop {
+  display: none;
+}
+
+/****************************************/
+/***** MEDIA QUERIES ******/
+
+@media (min-width: 1024px) {
+  .bs-5 .landing .title-xiaomi-desktop {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-10%, -50%);
+    display: block;
+  }
+
+  .bs-5 .landing .figure-desktop {
+    position: relative;
+    display: block;
+  }
+
+  .bs-5 .landing .figure-mobile {
+    display: none;
+  }
+}
